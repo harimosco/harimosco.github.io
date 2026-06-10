@@ -93,21 +93,31 @@ filterButtons.forEach(button => {
    MOBILE MENU
 ========================== */
 
-const menuToggle =
-document.querySelector('.menu-toggle');
+/* ==========================
+   MOBILE MENU
+========================== */
 
-const navbar =
-document.querySelector('#navbar');
+document.addEventListener("DOMContentLoaded", () => {
 
-if(menuToggle){
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navbar = document.querySelector("#navbar");
 
-    menuToggle.addEventListener('click', () => {
+    if (menuToggle && navbar) {
 
-        navbar.classList.toggle('show');
+        menuToggle.addEventListener("click", () => {
+            navbar.classList.toggle("show");
+        });
 
-    });
+        // optional: close menu when clicking a link
+        document.querySelectorAll("#navbar a").forEach(link => {
+            link.addEventListener("click", () => {
+                navbar.classList.remove("show");
+            });
+        });
 
-}
+    }
+
+});
 
 /* ==========================
    SCROLL TOP BUTTON
