@@ -305,13 +305,20 @@ nav a:hover{
     border-radius:20px;
 }
 
-.social-buttons a{
-    display:inline-block;
-    margin:5px;
-    padding:12px 20px;
-    background:#06b6d4;
-    color:#fff;
-    border-radius:30px;
+.social-buttons a {
+    display: inline-block;
+    margin: 6px;
+    padding: 12px 18px;
+    background: #06b6d4;
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-buttons a:hover {
+    transform: translateY(-3px);
+    background: #0891b2;
 }
 
 /* =========================
