@@ -401,28 +401,27 @@ footer h3{
     .section{
         padding:80px 5%;
     }
-
-    /* MOBILE MENU */
-.menu-toggle{
-    display:none;
-    font-size:28px;
-    cursor:pointer;
-    color:#fff;
 }
 
-@media (max-width:768px){
+/* =========================
+   MOBILE MENU
+========================= */
+
+@media(max-width:768px){
 
     .header{
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
         padding:15px 20px;
-        position:relative;
+        position:fixed;
+        width:100%;
+        left:0;
+        top:0;
     }
 
     .menu-toggle{
         display:block;
         margin-left:auto;
+        color:#fff;
+        font-size:28px;
         z-index:1001;
     }
 
@@ -430,9 +429,9 @@ footer h3{
         display:none;
         position:absolute;
         top:70px;
-        right:20px;
+        right:10px;
         width:220px;
-        background:#111;
+        background:#111827;
         flex-direction:column;
         border-radius:10px;
         padding:15px;
@@ -444,8 +443,8 @@ footer h3{
     }
 
     #navbar a{
-        padding:12px 0;
-        text-align:center;
         width:100%;
+        text-align:center;
+        padding:12px 0;
     }
 }
