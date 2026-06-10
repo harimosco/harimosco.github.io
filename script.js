@@ -130,7 +130,7 @@ window.addEventListener('scroll', () => {
 
     if(window.scrollY > 300){
 
-        scrollTopBtn.style.display = 'flex';
+        scrollTopBtn.style.display = 'block';
 
     } else {
 
