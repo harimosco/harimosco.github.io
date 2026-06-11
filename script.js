@@ -105,20 +105,18 @@ document.addEventListener("DOMContentLoaded", () => {
     if (menuToggle && navbar) {
 
         menuToggle.addEventListener("click", () => {
-            navbar.classList.toggle("show");
+            navbar.classList.toggle("active");
         });
 
-        // optional: close menu when clicking a link
         document.querySelectorAll("#navbar a").forEach(link => {
             link.addEventListener("click", () => {
-                navbar.classList.remove("show");
+                navbar.classList.remove("active");
             });
         });
 
     }
 
 });
-
 /* ==========================
    SCROLL TOP BUTTON
 ========================== */
