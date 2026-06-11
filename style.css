@@ -403,37 +403,25 @@ footer h3{
     }
 }
 
-/* =========================
-   MOBILE MENU
-========================= */
-
-/* =========================
-   MOBILE MENU
-========================= */
-
-@media(max-width:768px){
+@media (max-width:768px){
 
     .header{
         position:fixed;
         top:0;
         left:0;
+        right:0;
         width:100%;
-        padding:12px 15px;
+        padding:12px 12px !important;
         display:flex;
         justify-content:space-between;
         align-items:center;
         background:rgba(15,23,42,0.95);
-        backdrop-filter:blur(12px);
-        box-sizing:border-box;
         z-index:1000;
     }
 
     .logo{
         font-size:18px;
-        max-width:75%;
-        white-space:nowrap;
-        overflow:hidden;
-        text-overflow:ellipsis;
+        font-weight:700;
     }
 
     .menu-toggle{
@@ -442,52 +430,27 @@ footer h3{
         justify-content:center;
         width:40px;
         height:40px;
-        flex-shrink:0;
-        font-size:24px;
+        font-size:22px;
         color:#fff;
-        cursor:pointer;
         background:#1e293b;
         border-radius:8px;
         border:1px solid rgba(255,255,255,0.1);
-        transition:0.3s;
-    }
-
-    .menu-toggle:hover{
-        background:#06b6d4;
+        margin:0;
     }
 
     #navbar{
         display:none;
         position:fixed;
         top:65px;
-        right:15px;
+        right:12px;
         width:200px;
         background:#1e293b;
-        border-radius:16px;
-        padding:15px;
+        border-radius:12px;
+        padding:12px;
         flex-direction:column;
-        gap:5px;
-        box-shadow:0 15px 35px rgba(0,0,0,0.35);
-        border:1px solid rgba(255,255,255,0.08);
-        z-index:999;
     }
 
     #navbar.active{
         display:flex;
-    }
-
-    #navbar a{
-        display:block;
-        width:100%;
-        padding:12px 15px;
-        border-radius:10px;
-        color:#fff;
-        text-align:left;
-        transition:0.3s;
-    }
-
-    #navbar a:hover{
-        background:#06b6d4;
-        color:#fff;
     }
 }
