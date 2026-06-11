@@ -408,24 +408,24 @@ footer h3{
 ========================= */
 
 @media(max-width:768px){
+    .logo{
+        font-size:16px;
+    }
+}
 
     .header{
         position:fixed;
         top:0;
         left:0;
         width:100%;
-        padding:15px 20px;
+        padding:12px 15px;
         display:flex;
         justify-content:space-between;
         align-items:center;
         background:rgba(15,23,42,0.95);
-        backdrop-filter:blur(12px);
-        z-index:1000;
+        box-sizing:border-box;
     }
 
-    .logo{
-        font-size:20px;
-    }
 
     .menu-toggle{
         display:flex;
@@ -460,6 +460,10 @@ footer h3{
     #navbar.active{
         display:flex;
     }
+
+   #navbar{
+    width:200px;
+}
 
     #navbar a{
         display:block;
